@@ -31,3 +31,4 @@ C:\Users\jehp0\OneDrive\Desktop\porrtfolio_projects\web_full_Stack_development_b
 C:\Users\jehp0\OneDrive\Desktop\porrtfolio_projects\web_full_Stack_development_bigData\Grammrlydb\core\obj\Debug\net8.0\core.pdb
 C:\Users\jehp0\OneDrive\Desktop\porrtfolio_projects\web_full_Stack_development_bigData\Grammrlydb\core\obj\Debug\net8.0\core.genruntimeconfig.cache
 C:\Users\jehp0\OneDrive\Desktop\porrtfolio_projects\web_full_Stack_development_bigData\Grammrlydb\core\obj\Debug\net8.0\ref\core.dll
+C:\Users\jehp0\OneDrive\Desktop\porrtfolio_projects\web_full_Stack_development_bigData\Grammrlydb\core\obj\Debug\net8.0\core.sourcelink.json
