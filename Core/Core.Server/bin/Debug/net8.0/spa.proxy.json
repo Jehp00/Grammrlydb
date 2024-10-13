@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\..\\core.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
