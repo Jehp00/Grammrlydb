@@ -22,7 +22,6 @@ namespace Core.Server.Controllers
             {
                 throw new ArgumentNullException("user");
             }
-            string message = "";
             IdentityResult result = new();
             try
             {
@@ -42,14 +41,13 @@ namespace Core.Server.Controllers
                     return BadRequest(result);
                 }
 
-                message = "Register Successfully";
             }
             catch (Exception ex)
             {
-                return BadRequest("Someything went wrong, please try again" + ex.Message);
+                return BadRequest(new {message = "Someything went wrong, please try again" + ex.Message });
             }
 
-            return Ok(new { message = message, result = result });
+            return Ok(new { message = "Register Successfully", result = result });
         }
 
         [HttpPost("login")]
@@ -61,7 +59,7 @@ namespace Core.Server.Controllers
                 // Check if email is provided
                 if (string.IsNullOrEmpty(login.Email) || string.IsNullOrEmpty(login.Password))
                 {
-                    return BadRequest("Email and password are required");
+                    return BadRequest(new {message= "Email and password are required" });
                 }
 
                 User user_ = await userManager.FindByEmailAsync(login.Email);
@@ -69,7 +67,7 @@ namespace Core.Server.Controllers
                 // Ensure user exists and their email is confirmed
                 if (user_ == null)
                 {
-                    return Unauthorized("User does not exist or email not confirmed");
+                    return Unauthorized(new {message = "User does not exist or email not confirmed" });
                 }
 
                 if (!user_.EmailConfirmed)
@@ -84,37 +82,35 @@ namespace Core.Server.Controllers
 
                 if (!result.Succeeded)
                 {
-                    return Unauthorized("Check your credentials and try again");
+                    return Unauthorized(new { message = "Check your login credentials and try it again" });
                 }
 
                 user_.LastLogin = DateTime.Now;
                 var updateResult = await userManager.UpdateAsync(user_);
 
-                message = "Login Successfully";
             }
             catch (Exception ex)
             {
-                return BadRequest("Something went wrong, please try again. " + ex.Message);
+                return BadRequest(new { message = "Something went wrong, please try again. " + ex.Message });
             }
 
-            return Ok(new { message });
+            return Ok(new { message = "Login Successfully" });
         }
 
 
         [HttpGet("logout"), Authorize]
         public async Task<ActionResult> LogoutUser()
         {
-            string message = "See you next time";
             try
             {
                 await signInManager.SignOutAsync();
             }
             catch (Exception ex)
             {
-                return BadRequest("Someything went wrong, please try again" + ex.Message);
+                return BadRequest(new {message = "Someything went wrong, please try again" + ex.Message });
             }
 
-            return Ok(new { message });
+            return Ok(new { message = "Nos vemos la proxima!!" });
         }
 
         [HttpGet("admin"), Authorize]
@@ -139,9 +135,8 @@ namespace Core.Server.Controllers
         }
 
         [HttpGet("xhtlekd"), Authorize]
-        public async Task<ActionResult> CheckUSer(string email)
+        public async Task<ActionResult> CheckUSer()
         {
-            string message = "Logged In";
             User currentUser = new();
 
             try
@@ -155,14 +150,14 @@ namespace Core.Server.Controllers
                 }
                 else
                 {
-                    return Forbid("Acces denied");
+                    return Forbid();
                 }
             }
             catch (Exception ex) { 
-                return BadRequest("Something went wrong checking the user. " + ex.Message);
+                return BadRequest(new {message = "Something went wrong checking the user. " + ex.Message });
             }
 
-            return Ok(new { message, user = currentUser});
+            return Ok(new { message = "Logged In", user = currentUser});
             
         }
 

@@ -2,16 +2,20 @@ import './App.css';
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from "react-router-dom"
 import ProtectedRoutes from './components/ProtectedRoutes';
 import Home from './components/Home';
-import Admin from './components/Admin';
+// import Admin from './components/Admin';
 import Login from './components/Login';
 import Register from './components/Register';
+import Account from './components/Account';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/'>
             <Route element={<ProtectedRoutes/>}>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/Admin' element={<Admin/>}/>
+                {/* <Route path='/Admin' element={<Admin/>}/> */}
+                <Route path='/Cuentas' element={<Account/>}/>
+                <Route path='/Contactos' element={<Contact/>}/>
             </Route>
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
@@ -38,9 +42,11 @@ function App() {
                 {
                     isLogged ?
                     <span className='item-holder'>
-                        <a href="/">Home</a>
-                        <a href="/Admin">Admin</a>
-                        <span>Cerrar sesion</span>
+                        <a href="/">Guias</a>{" "}
+                        <a href="/Contactos">Contactos</a>{" "}
+                        <a href="/Retos">Retos</a>{" "}
+                        <a href="/Cuentas">Cuenta</a>{" "}
+                        <span>Cerrar sesion</span>{" "}
                     </span> :
                     <span className='item-holder'>
                         <a href="/login">Inicia Sesion</a>

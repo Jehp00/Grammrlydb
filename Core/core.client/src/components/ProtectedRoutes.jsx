@@ -6,13 +6,13 @@ function ProtectedRoutes() {
     const [waiting, setWaiting] = useState(true)
 
     useEffect(() => {
-        fetch("api/SecureWeb/xhtlekd", {
+        fetch("api/SecureWeb/xhtlekd/", {
             method: "GET",
             credentials: "include"
         }).then(res => res.json()).then(data=> {
-            console.log(data.message)
-            setIsLogged(true)
+            console.log(data)
             setWaiting(false)
+            setIsLogged(true)
             localStorage.setItem("user", data.user.email)
             console.log(data.user)
         }).catch((err) => {

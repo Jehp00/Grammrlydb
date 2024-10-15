@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "Core.Server\\Models\\Login.cs",
               "ToolTip": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\Models\\Login.cs",
               "RelativeToolTip": "Core.Server\\Models\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T20:09:22.598Z",
               "EditorCaption": ""
@@ -83,8 +83,7 @@
               "RelativeToolTip": "Core.Server\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:06:46.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T20:06:46.574Z"
             },
             {
               "$type": "Document",
@@ -94,7 +93,7 @@
               "RelativeDocumentMoniker": "Core.Server\\Controllers\\SecureWebController.cs",
               "ToolTip": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\Controllers\\SecureWebController.cs",
               "RelativeToolTip": "Core.Server\\Controllers\\SecureWebController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACUAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAIgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T19:25:35.398Z",
               "EditorCaption": ""
