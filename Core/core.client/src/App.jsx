@@ -48,6 +48,7 @@ function App() {
     <div className="top-nav">
         {isLogged ? (
             <div className='item-holder absolute z-50 bg-white text-black font-["fantasy"] w-full'>
+                <img src="/logo.jpg" alt="" className='w-auto h-full'/>
                 <div className='ml-[30%]'>
                     <a className='mr-8 border border-black rounded-full hover:text-gray-200 px-4 py-2' href="/">Guias</a>{" "}
                     <a className='mr-8 border border-black rounded-full hover:text-gray-200 px-4 py-2' href="/Contactos">Contactos</a>{" "}
@@ -67,6 +68,7 @@ function App() {
             </div>
         ) : (
             <div className='item-holder absolute z-50 bg-white text-black font-["fantasy"] w-full'>
+                <img src="/logo.jpg" alt="" className='w-auto h-full'/>
                 <div className='ml-[35%]'>
                     <a className='mr-[200px] border border-black rounded-full hover:text-gray-200 px-4 py-1' href="/login">Inicia Sesion</a>
                     <a className='border border-black rounded-full hover:text-gray-200 px-4 py-1' href="/register">Registrate</a>
