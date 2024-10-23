@@ -6,14 +6,16 @@ export default function Challenges() {
   const [userStatus, setStatus] = useState({});
   const [selectedQuestion, setSelectedQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [feedback, setFeedback] = useState(null); // To store feedback about the answer
+  const [feedback, setFeedback] = useState(null); // Respuesta que se renderiza si la respuesta a la pregunta en buena o mala
 
   useEffect(() => {
+    // Trae las preguntas del json
     const questionInstance = new Question();
     questionInstance.fetchQuestions().then(() => {
       setQuestions(questionInstance.getQuestions());
     });
 
+    // Hace la peticion a la base de datos sobre el total de preguntas y cuantas preguntas lleva resueltas
     const user = localStorage.getItem("user");
     fetch("api/SecureWeb/user-info/" + user, {
       method: "GET",
@@ -28,19 +30,22 @@ export default function Challenges() {
       });
   }, []);
 
+
   const handleQuestionClick = (idx) => {
-    // Toggle the selected question
+    // Codigo que si le da click a la casilla se abre la pregunta
     setSelectedQuestion(selectedQuestion === idx ? null : idx);
-    setSelectedOption(null); // Reset selected option
-    setFeedback(null); // Reset feedback
+    setSelectedOption(null); // Elimina el mensaje cuando se responde una pregunta
+    setFeedback(null); // Elimina el mensaje cuando se responde una pregunta
   };
 
+  // funcion que revisa si la respuesta es correcta
   const checkAnswer = async (correctAnswer) => {
     if (selectedOption === correctAnswer) {
+      // Mensaje derespuesta correcta
       setFeedback("✅ Correct answer!");
 
-      // Make a request to update the answered questions in the DB
-      const userEmail = localStorage.getItem("user"); // Assuming you have the user's email stored
+      // Se hace una peticion a la base de datos para editar la fila del usuario y desde el back se suma 1 al numero de respuestas completadas
+      const userEmail = localStorage.getItem("user"); // trae el email para identificar el usuario del ambiente locla del browser localStroge
       try {
         const response = await fetch(`api/SecureWeb/update-answer/${userEmail}`, {
           method: "PUT",
@@ -51,21 +56,23 @@ export default function Challenges() {
           throw new Error("Failed to update total answered questions");
         }
 
-        // Update the local userStatus to reflect the change
+        // Actualiza el status del usuario desbloqueando la siguiente pregunta
         setStatus((prevState) => ({
           ...prevState,
           totalAnsweredQuestions: prevState.totalAnsweredQuestions + 1,
         }));
-
+        // Si algo sale mal renderisa un mensaje de que algo mal pasa en el servidor back
       } catch (error) {
         console.error("Error updating total answered questions:", error);
         setFeedback("❌ Error updating your progress.");
       }
     } else {
+      // Mensaje si la respuesta seleccionada es incorrecta
       setFeedback("❌ Incorrect answer.");
     }
   };
 
+  // Mapea las preguntas del array de preguntas y pone la data correspondiente automaticamente del json
   return (
     <div className="p-16">
       <h1>Retos</h1>

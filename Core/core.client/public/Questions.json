@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "¿Cuál de las siguientes opciones es un saludo común en inglés?",
       "options": ["Goodbye", "Hello", "Thank you"],
       "correctAnswer": "Hello",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "Si conoces a alguien por primera vez, ¿cuál de las siguientes frases es adecuada para presentarte?",
       "options": ["I like pizza.", "My name is John.", "It’s raining today."],
       "correctAnswer": "My name is John.",
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "¿Cuál es el número 'three' en español?",
       "options": ["Dos", "Tres", "Cuatro"],
       "correctAnswer": "Tres",
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "¿Cuál es el número que sigue después de 'seven'?",
       "options": ["Six", "Eight", "Nine"],
       "correctAnswer": "Eight",
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "¿Cuál de las siguientes palabras significa 'hermano' en inglés?",
       "options": ["Sister", "Brother", "Mother"],
       "correctAnswer": "Brother",
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "Si quieres presentar a tu amigo, ¿cuál de las siguientes frases es correcta?",
       "options": ["This is my friend.", "I like dogs.", "It’s a sunny day."],
       "correctAnswer": "This is my friend.",
@@ -55,7 +55,7 @@
     },
     {
       "id": 7,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What color is the sky on a clear day?",
       "options": ["Red", "Blue", "Green", "Yellow"],
       "correctAnswer": "Blue",
@@ -65,7 +65,7 @@
     {
       "id": 8,
       "question": "Which shape has three sides?",
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "options": ["Square", "Circle", "Triangle", "Rectangle"],
       "correctAnswer": "Triangle",
       "level": "A1"
@@ -81,7 +81,7 @@
     },
     {
       "id": 10,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "Which month comes after April?",
       "options": ["March", "June", "May", "July"],
       "correctAnswer": "May",
@@ -90,7 +90,7 @@
     },
     {
       "id": 11,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What do you eat for breakfast?",
       "options": ["Ice cream", "Eggs", "Cookies", "Chips"],
       "correctAnswer": "Eggs",
@@ -99,7 +99,7 @@
     },
     {
       "id": 12,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What is a popular drink in summer?",
       "options": ["Hot chocolate", "Lemonade", "Soup", "Coffee"],
       "correctAnswer": "Lemonade",
@@ -108,7 +108,7 @@
     },
     {
       "id": 13,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What do you wear when it's cold?",
       "options": ["Swimsuit", "Jacket", "Shorts", "Sandals"],
       "correctAnswer": "Jacket",
@@ -117,7 +117,7 @@
     },
     {
       "id": 14,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What do you wear on your head?",
       "options": ["Gloves", "Belt", "Hat", "Tie"],
       "correctAnswer": "Hat",
@@ -126,7 +126,7 @@
     },
     {
       "id": 15,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "Where do you go to buy groceries?",
       "options": ["Museum", "Supermarket", "School", "Hospital"],
       "correctAnswer": "Supermarket",
@@ -135,7 +135,7 @@
     },
     {
       "id": 16,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "Where can you see animals?",
       "options": ["Zoo", "Library", "Office", "Gym"],
       "correctAnswer": "Zoo",
@@ -144,7 +144,7 @@
     },
     {
       "id": 17,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What do you do with a book?",
       "options": ["Eat", "Read", "Jump", "Sleep"],
       "correctAnswer": "Read",
@@ -153,7 +153,7 @@
     },
     {
       "id": 18,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What do you do when you are happy?",
       "options": ["Cry", "Smile", "Sleep", "Run"],
       "correctAnswer": "Smile",
@@ -162,7 +162,7 @@
     },
     {
       "id": 19,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What is a common hobby that involves painting?",
       "options": ["Photography", "Drawing", "Gardening", "Writing"],
       "correctAnswer": "Drawing",
@@ -171,7 +171,7 @@
     },
     {
       "id": 20,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "Which activity involves playing an instrument?",
       "options": ["Singing", "Cooking", "Swimming", "Dancing"],
       "correctAnswer": "Dancing",
@@ -180,7 +180,7 @@
     },
     {
       "id": 21,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What is it called when water falls from the sky?",
       "options": ["Sun", "Rain", "Wind", "Snow"],
       "correctAnswer": "Rain",
@@ -189,7 +189,7 @@
     },
     {
       "id": 22,
-      "title": "whatever",
+      "title": "Pregunta de ingles",
       "question": "What do you call a hot, sunny day?",
       "options": ["Cold", "Stormy", "Warm", "Cloudy"],
       "correctAnswer": "Warm",

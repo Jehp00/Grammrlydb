@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 
+//Compion
 function Account() {
     document.title = "Welcome to Grammarly";
     const [userInfo, setUserInfo] = useState({});
 
-
+    // Request a la base de datos
     useEffect(() => {
         const user = localStorage.getItem("user");
         fetch("api/SecureWeb/account/" + user, {
@@ -17,7 +18,7 @@ function Account() {
         })
     } ,[]);
 
-
+    // Renderiza el codigo html con la data
     return (
         <section className='bg-[url("/Account/bg.webp")] bg-cover h-screen place-content-center'>
             <header>
