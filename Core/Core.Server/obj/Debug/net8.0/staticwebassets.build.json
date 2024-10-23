@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SwUQ0aZjGmLw98+QaTdVIOfSFFAmdrF74FP7fm5RlUw=",
+  "Hash": "hnYwNu0StjqdYts+hQYD3vf5/vDo6oIlJPePBgYarAk=",
   "Source": "Core.Server",
   "BasePath": "_content/Core.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "core.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],

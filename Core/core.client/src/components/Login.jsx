@@ -54,26 +54,30 @@ function Login() {
     };
 
     return (
-        <section className='login-page-wrapper'>
-            <div className='login-page'>
-                <header>
-                    <h1>Login Page</h1>
-                </header>
-            </div>
-            <p className='message'></p>
-            <div className='form-holder'>
-                <form action="#" className='login' onSubmit={loginHandle}>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name='email' id='email' required />
-                    <br />
-                    <label htmlFor="password">Password</label>
-                    <input type="password" name='Password' id='password' required />
-                    <br />
-                    <input type="checkbox" id='remember' name='Remember' />
-                    <label htmlFor="remember">Remember password?</label>
-                    <br />
-                    <input type="submit" value="Login" className='login-btn' />
-                </form>
+        <section className='bg-[url("/Login/wallpaperbetter.jpg")] bg-cover h-screen w-full overflow-y-hidden place-content-center'>
+            <div className='bg-white p-14 rounded-[18px] border border-black w-[20%] mx-auto'>
+                <div className='login-page'>
+                    <header>
+                        <h1 className='text-center text-[28px]'>GrammarlyDB</h1>
+                        <h1 className='text-center text-[20px]'>Iniciar Sesion</h1>
+                    </header>
+                </div>
+                <p className='message'></p>
+                <div className='form-holder'>
+                    <form action="#" className='space-y-3' onSubmit={loginHandle}>
+                        <label className='' htmlFor="email">Ingrese su email</label>
+                        <input className='border border-black rounded-[5px] px-4 py-2 w-full' type="email" name='email' id='email' required />
+                        <br />
+                        <br />
+                        <label htmlFor="">Ingrese su conntraseña</label>
+                        <input className='border border-black rounded-[5px] px-4 py-2 w-full' type="password" name='Password' id='password' required />
+                        <br />
+                        <input type="checkbox" id='remember' name='Remember' />
+                        <label className='ml-3' htmlFor="remember">Recordar conntraseña?</label>
+                        <br />
+                        <input type="submit" value="Enviar" className='px-4 py-2 border border-black rounded-full' />
+                    </form>
+                </div>
             </div>
         </section>
     );

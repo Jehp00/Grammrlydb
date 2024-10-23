@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|solutionrelative:core.server\\controllers\\securewebcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|c:\\users\\jehp0\\onedrive\\desktop\\porrtfolio_projects\\web_full_stack_development_bigdata\\grammrlydb\\core\\core.server\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|solutionrelative:core.server\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|c:\\users\\jehp0\\onedrive\\desktop\\porrtfolio_projects\\web_full_stack_development_bigdata\\grammrlydb\\core\\core.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|solutionrelative:core.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|c:\\users\\jehp0\\onedrive\\desktop\\porrtfolio_projects\\web_full_stack_development_bigdata\\grammrlydb\\core\\core.server\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|solutionrelative:core.server\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{508032FC-E60E-46D6-9C4C-E33E16A60E6B}|Core.Server\\Core.Server.csproj|c:\\users\\jehp0\\onedrive\\desktop\\porrtfolio_projects\\web_full_stack_development_bigdata\\grammrlydb\\core\\core.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -62,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\Models\\Login.cs",
               "RelativeDocumentMoniker": "Core.Server\\Models\\Login.cs",
@@ -70,20 +66,20 @@
               "RelativeToolTip": "Core.Server\\Models\\Login.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:09:22.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T20:09:22.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\Models\\User.cs",
               "RelativeDocumentMoniker": "Core.Server\\Models\\User.cs",
               "ToolTip": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\Models\\User.cs",
               "RelativeToolTip": "Core.Server\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAACEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:06:46.574Z"
+              "WhenOpened": "2024-10-06T20:06:46.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -93,7 +89,7 @@
               "RelativeDocumentMoniker": "Core.Server\\Controllers\\SecureWebController.cs",
               "ToolTip": "C:\\Users\\jehp0\\OneDrive\\Desktop\\porrtfolio_projects\\web_full_Stack_development_bigData\\Grammrlydb\\Core\\Core.Server\\Controllers\\SecureWebController.cs",
               "RelativeToolTip": "Core.Server\\Controllers\\SecureWebController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAAAIgAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T19:25:35.398Z",
               "EditorCaption": ""

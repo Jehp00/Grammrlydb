@@ -161,5 +161,64 @@ namespace Core.Server.Controllers
             
         }
 
+        [HttpGet("user-info/{email}"), Authorize]
+        public async Task<ActionResult> GetUserInfo(string email)
+        {
+            try
+            {
+                // Find user by email
+                User user = await userManager.FindByEmailAsync(email);
+                if (user == null)
+                {
+                    return BadRequest(new { message = "User not found." });
+                }
+
+                // Return the required fields
+                var userInfo = new
+                {
+                    user.Level,
+                    user.TotalQuestions,
+                    user.TotalAnsweredQuestions
+                };
+
+                return Ok(userInfo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Something went wrong. " + ex.Message });
+            }
+        }
+
+        [HttpPut("update-answer/{email}"), Authorize]
+        public async Task<ActionResult> UpdateAnsweredQuestions(string email)
+        {
+            try
+            {
+                // Find user by email
+                User user = await userManager.FindByEmailAsync(email);
+                if (user == null)
+                {
+                    return BadRequest(new { message = "User not found." });
+                }
+
+                // Increment TotalAnsweredQuestions by 1
+                user.TotalAnsweredQuestions += 1;
+
+                // Save changes
+                var result = await userManager.UpdateAsync(user);
+                if (!result.Succeeded)
+                {
+                    return BadRequest(new { message = "Failed to update user info." });
+                }
+
+                return Ok(new { message = "TotalAnsweredQuestions updated successfully." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Something went wrong. " + ex.Message });
+            }
+        }
+
+
     }
 }

@@ -1,7 +1,7 @@
 
 export default function Contact() {
   return (
-    <section className="px-20 space-y-16 bg-black text-white">
+    <section className="pt-16 px-20 space-y-16 bg-black text-white">
         <div>
             <h1 className='text-center text-[50px]'>contactos</h1>
         </div>

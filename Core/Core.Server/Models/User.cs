@@ -26,5 +26,10 @@ namespace Core.Server.Models
 
         public bool IsAdmin { get; set; } = false;
 
+        // Add these two properties
+        public int TotalQuestions { get; set; } = 33; // This will always be 33 as you mentioned
+
+        public int TotalAnsweredQuestions { get; set; } = 0; // Default value is 0, you can increment this as users answer questions
+
     }
 }

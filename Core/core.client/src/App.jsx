@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Account from './components/Account';
 import Contact from './components/Contact';
+import Challenges from './components/Challenges';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
                 {/* <Route path='/Admin' element={<Admin/>}/> */}
                 <Route path='/Cuentas' element={<Account/>}/>
                 <Route path='/Contactos' element={<Contact/>}/>
+                <Route path='/Retos' element={<Challenges/>}/>
             </Route>
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
@@ -38,24 +40,37 @@ function App() {
 
     return (
         <section>
-            <div className="top-nav">
-                {
-                    isLogged ?
-                    <span className='item-holder'>
-                        <a href="/">Guias</a>{" "}
-                        <a href="/Contactos">Contactos</a>{" "}
-                        <a href="/Retos">Retos</a>{" "}
-                        <a href="/Cuentas">Cuenta</a>{" "}
-                        <span>Cerrar sesion</span>{" "}
-                    </span> :
-                    <span className='item-holder'>
-                        <a href="/login">Inicia Sesion</a>
-                        <a href="/register">Registrate</a>
-                    </span>
-                }
+    <div className="top-nav">
+        {isLogged ? (
+            <div className='item-holder absolute z-50 bg-white text-black font-["fantasy"] w-full'>
+                <div className='ml-[30%]'>
+                    <a className='mr-8 border border-black rounded-full hover:text-gray-200 px-4 py-2' href="/">Guias</a>{" "}
+                    <a className='mr-8 border border-black rounded-full hover:text-gray-200 px-4 py-2' href="/Contactos">Contactos</a>{" "}
+                    <a className='mr-8 border border-black rounded-full hover:text-gray-200 px-4 py-2' href="/Retos">Retos</a>{" "}
+                    <a className='mr-8 border border-black rounded-full hover:text-gray-200 px-4 py-2' href="/Cuentas">Cuenta</a>{" "}
+                    <button
+                        className='border border-black rounded-full hover:text-gray-200 px-4 py-2'
+                        onClick={() => {
+                            localStorage.clear();
+                            window.location.reload(); // reloads the page
+                        }}
+                        >
+                        Cerrar sesion
+                    </button>{" "}
+                </div>
             </div>
-            <RouterProvider router={router}></RouterProvider>
-        </section>
+        ) : (
+            <div className='item-holder absolute z-50 bg-white text-black font-["fantasy"] w-full'>
+                <div className='ml-[35%]'>
+                    <a className='mr-[200px] border border-black rounded-full hover:text-gray-200 px-4 py-1' href="/login">Inicia Sesion</a>
+                    <a className='border border-black rounded-full hover:text-gray-200 px-4 py-1' href="/register">Registrate</a>
+                </div>
+            </div>
+        )}
+    </div>
+    <RouterProvider router={router}></RouterProvider>
+</section>
+
     )
 }
 
